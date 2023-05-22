@@ -1,0 +1,20 @@
+$badges-border-radius: 6px;
+
+@mixin badge($base-color) {
+    $background-color: lighten($base-color, 20%);
+    background-color: rgba($background-color, 0.2);
+    border: 1px solid rgba($background-color, 0.3);
+    color: $base-color;
+}
+
+.user-status-badge {
+    border-radius: $badges-border-radius;
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.5 * $standard-spacing $standard-spacing;
+}
+
+.user-status-badge-active {
+    @include badge($active-color)
+}

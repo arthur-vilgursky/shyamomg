@@ -1,0 +1,22 @@
+$buttons-border-radius: 6px;
+
+.button-link {
+    color: $link-color;
+    font-weight: bold;
+
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+}
+
+.button-primary {
+    background-color: $primary-color;
+    border-radius: $buttons-border-radius;
+    color: white;
+    font-weight: bold;
+    padding: $standard-spacing 1.5 * $standard-spacing;
+
+    &:hover {
+        background-color: lighten($primary-color, 5%);
+    }
+}

@@ -1,0 +1,32 @@
+$cells-padding: $standard-spacing;
+
+.index-table {
+    width: 100%;
+
+    & > thead > tr > th {
+        padding: $cells-padding;
+        text-align: left;
+    }
+
+    & > tbody > tr {
+        border-top: $light-border;
+
+        & > td {
+            padding: $cells-padding;
+        }
+    }
+}
+
+.index-table-description-body {
+    margin-top: $standard-spacing;
+}
+
+.index-table-header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: $cells-padding;
+}
+
+.index-table-title {
+    font-weight: bold;
+}

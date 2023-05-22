@@ -1,0 +1,26 @@
+@import 'variables';
+
+@import 'badges';
+@import 'buttons';
+@import 'index-table';
+
+:root {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    border: $light-border;
+    border-radius: 0.5em;
+    margin: 3 * $standard-spacing 10%;
+    padding: 5 * $standard-spacing;
+}
